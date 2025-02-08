@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body::after {
+    content: "";
+    background-image: url("../imagens/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+.container {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    gap: 0.625rem;
+    top: 0;
+    height: 3.752rem;
+    width: 100%;
+    background-image: linear-gradient(0deg,  rgb(255, 213, 5), rgb(255, 85, 33));
+    
+}
+
+.logo {
+    position: relative;
+    width: 90px;
+    margin: 5px;
+    border-radius: 8px;
+    
+}
+
+.titulo {
+font-family: 'Prosto One', cursive;
+margin: 13px;
+text-align: center;
+}
+
+
+
+#input__entrada{
+border-radius: 11px;
+font-family: sans-serif;
+font-weight: bold;
+border: none;
+color: rgb(48, 3, 3);
+margin-top: 150px;
+text-transform: lowercase;
+height: 347px;
+width: 429px;
+resize: none;
+text-align: center;
+
+opacity: 0.7;
+}
+
+::placeholder{color: #000000;}
+#input__entrada:focus{
+    outline: none;
+    border: 2px solid #01050a
+}
+
+#input__saida {
+    background: white;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    color: rgb(7, 1, 0);
+    margin-left: 170px;
+    margin-top: 150px;
+    padding-left:25%;
+    height: 360px;
+    resize: none;
+    opacity: 0.7;
+}
+
+
+
+
+.mensagem:focus{
+    outline: none;
+    border: 1px solid #01050a;
+}
+
+.botoes {
+    display: inline-block;
+    margin-top: 130px;
+}
+
+#botao__criptografar{
+    background: #ff4d0c;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 65px;
+    width: 165px;
+}
+
+#botao__descriptografar {
+    background-color: #f1eeee;
+    border: none;
+    border-radius: 10px ;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    height: 50px;
+    width: 165px;
+}
+
+.botoes2{
+    margin-top: 50px;
+    margin-left: 180px; 
+}
+
+#botao__copiar{
+    background-color: #ff4d0c;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px ;
+    color: #000000;
+    cursor: pointer;
+    height: 32px;
+    width: 81px;
+   
+  
+}
+
+
+#botao__apagar{
+    background-color: #f1eeee;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px ;
+    color: #000000;
+    cursor: pointer;
+    height: 32px;
+    width: 81px;    
+
+}
+
+.informacao {
+    color: #01050a;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#aviso__imagem {
+    margin-left: 5px;
+
+}
+
+.informacao h6 {
+    margin-left: 31px;
+    margin-top: -18px;
+}
+.footer_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    gap: 0.625rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.75rem;
+    width: 100%;
+    background-image: linear-gradient(180deg,  rgb(255, 213, 5), rgb(255, 85, 33));
+  }
+  
+  .footer_cont img {
+    width: 1.875rem;
+  }
+
+a img {
+  border-radius: 20px;
+
+}
+  
+p {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width:1040px) {
+    main {
+        display: flex;
+        margin-bottom: 50px;
+        margin-left: 80px;
+    }
+    header {
+        font-family: "Shadows Into Light", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        gap: 0.625rem;
+        top: 0;
+        height: 3.752rem;
+        width: 100%;
+        background-image: linear-gradient(90deg,  rgb(216, 125, 108), rgb(184, 34, 34));
+    }
+
+    #input__entrada{
+        border-radius: 11px;
+        border: none;
+        color: rgb(48, 3, 3);
+        margin-top: 150px;
+        text-transform: lowercase;
+        height: 147px;
+        width: 330px;
+        resize: none;
+        text-align: center;
+        margin-left: -60px;
+        opacity: 0.7;
+        }
+
+        ::placeholder{color: #eb1414;}
+        #input__entrada:focus{
+    outline: none;
+}
+
+#input__saida {
+    background: white;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: rgb(7, 1, 0);
+    margin-left: -335px;
+    margin-top: 403px;
+    padding-left: 182px;
+    height: 173px;
+    resize: none;
+    opacity: 0.7;
+}
+
+.botoes{
+    display: inline-flex;
+    margin-top: 10px;
+    margin-left: -105px; 
+}
+
+#botao__criptografar{
+    background: #d82a13;
+    border: 1px solid #df2f2f ;
+    border-radius: 10px;
+    color: #01050a;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 45px;
+    width: 165px;
+}
+
+#botao__descriptografar {
+    background-color: #f1eeee;
+    border: #df2f2f;
+    border-radius: 10px ;
+    color: #e21313;
+    cursor: pointer;
+    height: 50px;
+    width: 165px;
+}
+
+.informacao {
+    color: #01050a;
+    font-size: 18px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#aviso__imagem {
+    margin-left: -60px;
+
+}
+
+.informacao h6{
+    margin-left: -32px;
+    margin-top: -18px;
+}
+
+.botoes2{
+    margin-top: 31px;
+    margin-left: -296px;    
+}
+
+#botao__copiar{
+    background-color: #df2f2f;
+    border: #df2f2f;
+    border-radius: 10px ;
+    color: #01050a;
+    cursor: pointer;
+    height: 48px;
+    width: 125px;
+   
+  
+}
+
+
+#botao__apagar{
+    background-color: #f1eeee;
+    border: #df2f2f;
+    border-radius: 10px ;
+    color: #e21313;
+    cursor: pointer;
+    height: 48px;
+    width: 125px; 
+
+}
+
+.informacao {
+    color: #01050a;
+    font-size: 18px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+a img {
+    border-radius: 20px;
+    border-radius: 20px;
+    margin-right: 6px;
+}
+  
+p{
+    text-align: center;
+    font-size: 10px;
+}
+  
+
+
+
+
+
+}
+
